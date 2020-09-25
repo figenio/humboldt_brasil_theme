@@ -88,14 +88,16 @@
 
         if (strcasecmp($title, "Divulgação Científica") == 0): $attributeUrl = "disclosure";
         elseif (strcasecmp($title, "Eventos") == 0 || strcasecmp($title, "Events") == 0): $attributeUrl = "events";
-        // elseif (strcasecmp($title, "Histórico") == 0 || strcasecmp($title, "Historic") == 0): $attributeUrl = "historic";
-        // elseif (strcasecmp($title, "Membros") == 0 || strcasecmp($title, "Members") == 0): $attributeUrl = "members";
+        elseif (strcasecmp($title, "Histórico") == 0 || strcasecmp($title, "Historic") == 0): $attributeUrl = "default";
+        elseif (strcasecmp($title, "Membros") == 0 || strcasecmp($title, "Members") == 0): $attributeUrl = "default";
         elseif (strcasecmp($title, "Clube Humboldt do Brasil") == 0): $attributeUrl = "home";
         else: $attributeUrl = "";
         endif;
       ?>
         <!-- Título da página  -->
-        <?php if ($title): ?><h1 class="page-title background-<?= $attributeUrl ?>"><?php print $title; ?></h1><?php endif; ?>
+        <?php if ($title): ?>
+          <h1 class="page-title background-<?= $attributeUrl ?>"><?php print $title; ?></h1>
+        <?php endif; ?>
         
       <div class="clear"></div>
 

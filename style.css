@@ -143,7 +143,7 @@ table {
   width: 100%;
 }
 
-th, tr, td {
+th, tr {
   vertical-align: middle;
 }
 
@@ -311,6 +311,7 @@ img,
 video {
   max-width:100%;
   height:auto;
+  padding: 24px 0;
 }
 
 video {
@@ -323,12 +324,11 @@ audio {
 
 .content a img {
   background:#FFF;
-  margin-top: 3px;
-  width: 90%;
+  width: 100%;
 }
 
 .content a:hover img {
-  background:#F0F0F0;
+  background:#FFF;
 }
 
 /*
@@ -421,7 +421,7 @@ ul, ol, div.item-list ul{
 ul li, ul.menu li, ul.links li, .item-list ul li {
   background: url("images/marker.png") no-repeat scroll left 6px transparent;
   list-style: none outside none;
-  margin: 0 0 2px;
+  margin: 5px 0 2px;
   padding: 20px 0 0 15px;
 }
 
@@ -777,48 +777,49 @@ body.sidebar-second #sidebar-second {
 
 .node h2.title {
   font-size: 20px;
+  font-weight: bolder;
 }
 
 .background-disclosure {
   background-image: url("disclosure.jpg");
-  height: 200px;
-  padding: 130px 0 0 50px;
 }
 
 .background-events {
   background-image: url("events.jpg");
-  height: 200px;
-  padding: 130px 0 0 50px;
 }
 
 .background-historic {
   background-image: url("historic.jpg");
-  height: 200px;
-  padding: 130px 0 0 50px;
 }
 
 .background-home {
   background-image: url("home.jpg");
-  height: 200px;
-  padding: 130px 0 0 50px;
 }
 
 .background- {
-  padding: 20px 0 20px 50px;
+  display: none;
+}
+
+.background-default {
+  background-image: url("default_background.png");
+  background-size: auto;
 }
 
 .page-title {
   color: #fff;
+  height: 250px;
+  padding: 150px 0 0 50px;
   background-color: #044d67;
   background-size: cover;
   width: 1000px;
   text-transform: uppercase;  
   font-weight: bolder;
-  font-size: xx-large;
+  font-size: xxx-large;
 }
 
 .node h2.title a{
   color: #707070;
+  font-weight: bolder;
 }
 
 .block {
@@ -894,6 +895,7 @@ ul.links {
   color: #FFF;
   font-weight: normal;
   padding: 4px 8px;
+  display: none; /* Yep */
 }
 
 .links li a:hover {
@@ -1628,4 +1630,8 @@ ul.menu li{
 .right {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+}
+
+.test {
+  color: red !important;
 }

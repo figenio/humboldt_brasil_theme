@@ -56,7 +56,7 @@
     </div>
 
     <div style="display: inline-block; padding-top: 5%;">
-      <div style="width: 45%; float: right; margin-top:5%">
+      <div style="width: 45%; float: right; margin-top:3%">
         <p class="presentation-title">Fundação Alexander von Humboldt</p>
         <p style="font-size: medium;padding-left: 30px;"><a href="https://www.humboldt-foundation.de/entdecken/ueber-die-humboldt-stiftung/ueber-die-stiftung" target="_blank" style="color: #707070">Acesse o site da Fundação <i class="arrow right"></i></a></p>
         
