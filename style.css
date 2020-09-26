@@ -844,6 +844,7 @@ body.sidebar-second #sidebar-second {
 #footer-area .block > h2 {
   margin-bottom: 10px;
   border-bottom: 3px solid #fff;
+  padding-top: 12px;
   display: inline-block;
   font-size: large;
   font-weight: bold;
@@ -1096,10 +1097,30 @@ ul.secondary a.active {
 /* Navigation
 /*-------------------------------------------*/
 .item-list .pager li {
-  background: #cfcfcf;
+  background: #044d67;
   border-radius: 3px;
   margin-right: 4px;
-  text-shadow: 1px 1px #fff;
+  color: #fff;
+}
+
+.pager-first > a {
+  color: #fff;
+}
+
+.pager-previous > a {
+  color: #fff;
+}
+
+.pager-item > a {
+  color: #fff;
+}
+
+.pager-next > a {
+  color: #fff;
+}
+
+.pager-last > a {
+  color: #fff;
 }
 
 /*-------------------------------------------*
@@ -1512,6 +1533,7 @@ ol.search-results { padding-left: 0; }
   color: #fff;
   font-size: small;
   background: #044d67;
+  padding-top: 24px;
 }
 
 #footer a{
@@ -1530,7 +1552,8 @@ ol.search-results { padding-left: 0; }
 
 #footer-area {
   position:relative;
-  color:#fff
+  padding-left: 5%;
+  color:#fff;
 }
 
 #footer-area .column {
@@ -1549,7 +1572,7 @@ ol.search-results { padding-left: 0; }
 
 #copyright {
   clear:both;    
-  padding:0 0px;
+  padding:0 0 0 5%;
 }
 
 .copyright {
@@ -1582,8 +1605,10 @@ ol.search-results { padding-left: 0; }
 }
 
 .social-icons {
-  color: #fff;width: 100%;
+  color: #fff;
+  width: 100%;
   text-align: center;
+  padding: 12px 0;
 }
 
 .social-icons ul {

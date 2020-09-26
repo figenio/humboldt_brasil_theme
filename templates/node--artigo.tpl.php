@@ -103,7 +103,7 @@
   </div>
 
   <?php if (!empty($content['links'])): ?>
-    <footer>
+    <footer col>
       <?php print render($content['links']); ?>
     </footer>
   <?php endif; ?>
